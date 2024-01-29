@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #F0F0F0; /* Cambia el color gris según tus preferencias */
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el relleno por defecto */
+}
+
+.primary-color {
+  background-color: #367FA9;
+}
+
+.secondary-color {
+  background-color: #212A35;
+}
+
+.accent-color {
+  background-color: #337AB7;
+}

@@ -1,0 +1,27 @@
+<div class="sidenav secondary-color">
+    <h6 class="font-format"> MENÚ </h6>
+<!-- 
+    <a href="#"> Notificaciones </a><br />
+    <br />
+    <a href="#"> Pagos</a><br />
+    <br />
+    <a href="#"> Reportes </a><br />
+    <br />
+-->
+    <ul class="sidenav-nav ">
+        <li class="sidenav-nav-item" *ngFor="let data of navbarData">
+            
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+            <i class="sidenav-link-icon" [class]="data.icon"></i>
+            <span class="sidenav-link-text" @fadeInOut>
+                {{data.label}}
+            </span>
+
+            </a>
+        </li>
+    </ul>
+
+</div>
+

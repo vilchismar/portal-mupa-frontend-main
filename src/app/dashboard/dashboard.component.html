@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<div class="box">
+    <div class="sidebar" *ngIf="isLoggedIn"> 
+        <app-sidebar > </app-sidebar>
+    </div>
+
+    <div class="content" [ngStyle]="{'margin-left': (isLoggedIn) ? '16%' : ((!isLoggedIn) ? '0%' : null)}"> 
+        <app-body> </app-body>
+    </div>
+</div>
